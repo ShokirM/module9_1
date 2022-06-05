@@ -2,13 +2,12 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/ShokirM/module9_1.git/payment"
 	"github.com/ShokirM/module9_1.git/types"
 )
 
 func main() {
-	cards := []types.Card {
+	Cards := []types.Card {
 		{
 			Number: "5058 **** **** 1001",
 			Balance: 10_000,
@@ -30,5 +29,5 @@ func main() {
 			Active: types.Active,
 		},
 	}
-	fmt.Println(payment.PaymentSource(cards))
+	fmt.Println(payment.PaymentSource(Cards))
 }
