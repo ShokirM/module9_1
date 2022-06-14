@@ -2,7 +2,7 @@ package payment
 
 import "github.com/ShokirM/module9_1.git/types"
 
-var s []types.PaymentSource
+var S []types.PaymentSource
 
 func PaymentSource(cards []types.Card) []types.PaymentSource {
 	for _, card := range cards {
@@ -12,7 +12,7 @@ func PaymentSource(cards []types.Card) []types.PaymentSource {
 		if !card.Active {
 			continue
 		}
-		s = append(s, types.PaymentSource{Number: card.Number, Balance: card.Balance})
+		S = append(s, types.PaymentSource{Number: card.Number, Balance: card.Balance})
 	}
 	return s
 }
