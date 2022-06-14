@@ -12,7 +12,7 @@ func PaymentSource(cards []types.Card) []types.PaymentSource {
 		if !card.Active {
 			continue
 		}
-		S = append(s, types.PaymentSource{Number: card.Number, Balance: card.Balance})
+		S = append(S, types.PaymentSource{Number: card.Number, Balance: card.Balance})
 	}
-	return s
+	return S
 }
